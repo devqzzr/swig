@@ -55,10 +55,23 @@ html,
 body {
   background: #d4eeeb;
 }
+
+.site-bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(https://movement-prod.imgix.net/uploads/db/bd1640b1f34d9ab75b93fa9a297899/upload.png?auto=compress,format);
+  background-size: cover;
+}
+
 .site-header {
   background: #E22526;
   color: #fff;
   padding: 3rem 3rem 6rem;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 800px) {
   .site-header {
@@ -81,7 +94,10 @@ body {
   }
 }
 
-.site-body {}
+.site-body {
+  position: relative;
+  z-index: 2;
+}
 
 .hero {
   background: #E22526;
@@ -168,7 +184,6 @@ body {
     font-size: 4rem;
   }
 }
-
 
 .rule-section-body {
   flex-wrap: wrap;
@@ -270,6 +285,8 @@ body {
   letter-spacing: .1em;
   text-align: center;
   line-height: 4rem;
+  position: relative;
+  z-index: 2;
 }
 .site-footer-list {}
 .site-footer-list-item {}
