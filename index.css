@@ -141,6 +141,24 @@ body {
   max-width: 100px;
   margin:  0 auto 3rem;
 }
+.hero-action {
+  background: #fff;
+  color: #000;
+  border-radius: .5rem;
+  display: block;
+  max-width: 200px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+  line-height: 1em;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin: 3rem auto 0;
+  box-shadow: 0 20px 30px rgba(0,0,0,.5);
+  position: relative;
+  z-index: 2;
+}
 .hero-figure {
   position: relative;
 }
