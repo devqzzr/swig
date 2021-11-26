@@ -131,7 +131,7 @@ body {
 .hero-body {
   text-transform: uppercase;
   letter-spacing: .1em;
-  max-width: 400px;
+  max-width: 430px;
   margin:  0 auto;
 }
 .hero-body:before {
@@ -190,7 +190,7 @@ body {
   display: flex;
   padding: 1.5rem;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1300px;
   counter-reset: rule;
   justify-content: center;
 }
@@ -278,7 +278,134 @@ body {
   margin-top: 1.5rem;
 }
 
-.legal {}
+.legal {
+  background: #06867f;
+  color: #fff;
+}
+
+.legal-body {
+  padding: 1.5rem 6rem 1.5rem 33.33333vw;
+  font-size: 1.5rem;
+  line-height: 1.75em;
+}
+
+@media (max-width: 1000px) {
+  .legal-body {
+    padding: .75rem 6rem .75rem 33.33333vw;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .legal-body {
+    padding: 1.5rem 6rem 1.5rem 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.legal-nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 33.33333%;
+  box-sizing: border-box;
+  padding: 3rem;
+  line-height: 1em;
+  margin-bottom: -324px;
+}
+
+.legal-nav-body {
+  transition: all .2s ease;  
+}
+
+@media (max-width: 700px) {
+  .legal-nav {
+    background: rgba(255, 255,255, .7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    overflow: hidden;
+    padding: 1rem 1.5rem;
+    margin: 3rem 0 0 0;
+  }
+
+  .legal-nav-body {
+    height: 0; 
+  }
+  .legal-nav:before {
+    content: 'Menu';
+    color: #06867f;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    display: block;
+    padding: 1rem 0;
+  }
+  .is-active.legal-nav {
+    position: fixed;
+    left: 0;
+    top: 0;   
+    bottom: 0;
+    right: 0;
+  }
+  .is-active .legal-nav-body {
+    height: 100vh;
+  }
+}
+
+.legal-nav-link {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+  font-size: 1em;
+  color: #f09494;
+  display: block;
+  padding: 1rem 0;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .legal-nav-link {
+    color: #000;
+  }
+}
+
+.legal-header {
+  font-family: calgary-script-ot, sans-serif;
+  font-size: 7vw;
+  line-height: 1em;
+  margin: 3rem 0 1rem;
+  color: #fff;
+  text-shadow: .03em .03em 0 #f09494;
+  text-align: center;
+  padding-top: 4rem;
+}
+@media (max-width: 800px) {
+  .legal-header {
+    font-size: 11vw;
+    margin: 3rem 0 1rem;
+  }
+}
+
+.legal h4 {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000;
+}
+
+.legal p,
+.legal ul {
+  padding: .875em 0;
+}
+
+.legal strong {
+
+}
+
+.legal ul li {
+  list-style: disc;
+}
 
 .site-footer {
   text-transform: uppercase;
@@ -287,6 +414,8 @@ body {
   line-height: 4rem;
   position: relative;
   z-index: 2;
+  background: #000;
+  color: #fff;
 }
 .site-footer-list {}
 .site-footer-list-item {}
